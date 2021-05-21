@@ -8,6 +8,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5eabb00dd5825983"></script>
+
 </head>
 
 <body>
@@ -40,17 +44,26 @@
         <!-- <div> {{result}} </div> -->
         <br>
         <br>
+
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <div class="addthis_inline_share_toolbox"></div>
+
         <h2>
             <form action='/'>
                 다시 검색하기
                 <input type="submit" value="Submit" class="btn btn-success">
             </form>
         </h2>
+
     </div>
+    급조하느라 아직 RIOT API를 받지못해 fow에서 데이터를 가져옵니다
+    <br><br>
+    새로고침을 원하는 경우 fow전적을 새로고침해주세요 ㅠㅠ(곧 업데이트 예정)
+    <br><br>
+    만든놈 : mn, 이메일 : borissal07@naver.com
 </body>
-만든놈 : mn, 이메일 : borissal07@naver.com
 <!-- @2021. mn. All Rights Reserved. 이메일 : borissal07@naver.com -->
-<script result= <%= result %>>
+<script result=<%= result %>>
     var result = document.currentScript.getAttribute('result');
 
     function getTimeRemaining(lastTime) {
@@ -143,7 +156,7 @@
         margin: 10px 0px 20px;
     }
 
-    
+
 
     #clockdiv {
         font-family: sans-serif;
@@ -172,11 +185,14 @@
         padding-top: 10px;
         font-size: 32px;
     }
-    @media (max-width: 780px) {h1 {
-        font-weight: 100;
-        font-size: 40px;
-        margin: 40px 0px 20px;
-    }
+
+    @media (max-width: 780px) {
+        h1 {
+            font-weight: 100;
+            font-size: 40px;
+            margin: 40px 0px 20px;
+        }
+
         #clockdiv {
             font-family: sans-serif;
             color: #fff;
