@@ -23,7 +23,7 @@ app.get('/search', function (req, res) {
     
 });
 
-server.listen(8000, function() {
+server.listen(process.env.PORT||8000, function() {
     console.log('Express server listening on port ' + server.address().port);
 });
 
