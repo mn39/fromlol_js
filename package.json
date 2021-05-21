@@ -1,0 +1,26 @@
+{
+  "name": "fromlol",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "request": "^2.88.2",
+    "urlencode": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mn39/fromlol_js.git"
+  },
+  "author": "mn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mn39/fromlol_js/issues"
+  },
+  "homepage": "https://github.com/mn39/fromlol_js#readme"
+}
